@@ -89,7 +89,6 @@ loop:
 	}
 	wg.Wait()
 	close(r)
-	fmt.Println(len(r))
 	for value := range r {
 		*books = append(*books, value)
 	}
