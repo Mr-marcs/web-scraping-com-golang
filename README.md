@@ -8,4 +8,4 @@
  - structs
  - pointers
  
- Para isso fiz um pequeno brojeto de web scraping utilizando go, fiz isso utilizando o site http://toscrape.com/ que contém diversas páginas web para esse propósito, nela utilizei a página http://books.toscrape.com/ que contém vários catálogos de livros. 
+ Para isso fiz um pequeno projeto de web scraping utilizando go, fiz isso utilizando o site http://toscrape.com/ que contém diversas páginas web para esse propósito, nela utilizei a página http://books.toscrape.com/ que contém vários catálogos de livros. 
