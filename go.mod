@@ -1,4 +1,4 @@
-module github.com/mr-marcs/web-scraping
+module github.com/Mr-marcs/web-scraping-com-golang
 
 go 1.19
 
