@@ -24,7 +24,6 @@ func (b Book) String() string {
 var wg sync.WaitGroup
 
 func main() {
-	fmt.Println("a")
 	base_url := "http://books.toscrape.com/"
 	res, err := http.Get(base_url)
 
@@ -39,13 +38,9 @@ func main() {
 	books := make([]Book, 0)
 
 	scrap(doc, &books)
-	var count int = 0
+
 	for _, book := range books {
 		fmt.Println(book.title)
-		count++
-		if count == 3 {
-			break
-		}
 	}
 }
 func hasClassName(Attributes []html.Attribute, attr_val string) bool {
@@ -96,7 +91,7 @@ loop:
 	close(r)
 	fmt.Println(len(r))
 	for value := range r {
-		fmt.Println(value)
+		*books = append(*books, value)
 	}
 }
 
